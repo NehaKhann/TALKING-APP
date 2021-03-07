@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMS TEXT</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+      integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2>SEND SMS</h2>
+      <input
+        type="tel"
+        name="number"
+        id="number"
+        placeholder="Enter Phone Number"
+      />
+      <input type="text" name="msg" id="msg" placeholder="Enter Message..." />
+      <input
+        type="button"
+        id="button"
+        value="SEND TEXT"
+        class="button button-primary"
+      />
+      <p class="response"></p>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/smsClient.js"></script>
+  </body>
+</html>
